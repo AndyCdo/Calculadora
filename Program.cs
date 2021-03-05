@@ -8,39 +8,51 @@ namespace Calculadora
         {
          Console.WriteLine("Operando: ");
          int Operando1=Convert.ToInt32(Console.ReadLine());
-        
          Console.WriteLine("Operador: ");
          string operador=Convert.ToString(Console.ReadLine());
-
          Console.WriteLine("Operando: ");
          int Operando2=Convert.ToInt32(Console.ReadLine());
 
-         String suma= "+";
+         string suma= "+";
          string resta= "-";
          string multiplicacion= "*";
          string division= "/";
-         
+         int resultado= 0;
         if (operador == suma)
         {
-            int resultado= Operando1 + Operando2;
-            Console.WriteLine(Operando1 + operador + Operando2 + " =" + resultado);
+           resultado= sumar(Operando1, Operando2);
         }
-        if (operador == resta)
+        else if (operador == resta)
         {
-            int resultado= Operando1 - Operando2;
-            Console.WriteLine(Operando1 + operador + Operando2 + " =" + resultado);
+            resultado= restar(Operando1, Operando2);
         }
-        if (operador == multiplicacion)
+        else if (operador == multiplicacion)
         {
-            int resultado= Operando1 * Operando2;
-            Console.WriteLine(Operando1 + operador + Operando2 + " =" + resultado);
+            resultado= multiplicar(Operando1, Operando2);
         }
-        if (operador == division)
+        else if (operador == division)
         {
-            int resultado= Operando1 / Operando2;
-            Console.WriteLine(Operando1 + operador + Operando2 + " =" + resultado);
+            resultado= dividir(Operando1, Operando2);
         }
+        
+        Console.WriteLine(Operando1 + (" ") + operador + (" ") + Operando2 + " = " + resultado);
 
+        }
+        static int sumar(int num1, int num2 ){
+           int resultado= (num1 + num2);
+            return resultado;
+        }
+        static int restar(int num1, int num2 ){
+           int resultado= (num1 - num2);
+            return resultado;
+        }
+        static int multiplicar(int num1, int num2 ){
+           int resultado= (num1 * num2);
+            return resultado;
+        }
+        static int dividir(int num1, int num2 ){
+           int resultado= (num1 / num2);
+            return resultado;
         }
     }
 }

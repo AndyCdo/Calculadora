@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\work\\repos\\Calculadora\\Calculadora.csproj",
+      "projectUniqueName": "E:\\work\\Git Hub\\Calculadora\\Calculadora.csproj",
       "projectName": "Calculadora",
-      "projectPath": "E:\\work\\repos\\Calculadora\\Calculadora.csproj",
+      "projectPath": "E:\\work\\Git Hub\\Calculadora\\Calculadora.csproj",
       "packagesPath": "C:\\Users\\leo03\\.nuget\\packages\\",
-      "outputPath": "E:\\work\\repos\\Calculadora\\obj\\",
+      "outputPath": "E:\\work\\Git Hub\\Calculadora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leo03\\AppData\\Roaming\\NuGet\\NuGet.Config",
